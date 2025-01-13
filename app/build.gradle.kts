@@ -40,6 +40,7 @@ android {
 dependencies {
 	implementation(libs.androidx.core.ktx)
 	implementation(libs.androidx.lifecycle.runtime.ktx)
+	implementation(libs.androidx.lifecycle.runtime.compose)
 	implementation(libs.androidx.activity.compose)
 	implementation(platform(libs.androidx.compose.bom))
 	implementation(libs.androidx.ui)
@@ -48,6 +49,11 @@ dependencies {
 	implementation(libs.androidx.material3)
 	implementation(libs.androidx.foundation.layout.android)
 	implementation(libs.androidx.foundation.layout.android)
+	implementation(libs.androidx.navigation.compose)
+
+	implementation(libs.retrofit)
+	implementation(libs.retrofit.gson)
+
 	testImplementation(libs.junit)
 	androidTestImplementation(libs.androidx.junit)
 	androidTestImplementation(libs.androidx.espresso.core)
@@ -55,11 +61,4 @@ dependencies {
 	androidTestImplementation(libs.androidx.ui.test.junit4)
 	debugImplementation(libs.androidx.ui.tooling)
 	debugImplementation(libs.androidx.ui.test.manifest)
-
-	implementation("androidx.compose.ui:ui:1.7.6")
-	implementation("androidx.compose.material3:material3:1.3.1")
-	implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.7")
-	implementation("androidx.navigation:navigation-compose:2.8.5")
-	implementation("com.squareup.retrofit2:retrofit:2.9.0")
-	implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 }
